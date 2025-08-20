@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mohit Sahija — Portfolio</title>
+  <meta name="description" content="Personal portfolio of Mohit Sahija: About, Education, Qualifications, Certifications, Career, Where I live, Contact and Resume." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Progress bar & theme toggle -->
+  <div class="progress" aria-hidden="true"><span class="progress-bar" id="progressBar"></span></div>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">◎</button>
+
+  
+<!-- Header / Navigation -->
+<header class="site-header" id="top">
+  <div class="container nav-wrap">
+    <!-- Logo + Brand on left -->
+    <a href="#home" class="brand" aria-label="Go to Home">
+      <img src="images/Logo.jpg" alt="Mohit Sahija Logo" class="logo">
+      <span class="brand-text">Mohit Sahija</span>
+    </a>
+
+    <!-- Navigation on right -->
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About Me</a></li>
+        <li><a class="nav-link" href="#education">Education</a></li>
+        <li><a class="nav-link" href="#qualification">Qualification</a></li>
+        <li><a class="nav-link" href="#certifications">Certifications</a></li>
+        <li><a class="nav-link" href="#career">Career</a></li>
+        <li><a class="nav-link" href="#where-i-live">Where I Live</a></li>
+        <li><a class="nav-link" href="#resume">Resume</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+  <!-- Hero / Home with background image -->
+  <!-- Put your hero image at images/hero-bg.jpg -->
+  <main id="home" class="hero" style="--hero:url('images/Home.jpg')">
+    <div class="hero-overlay"></div>
+    <div class="container hero-inner">
+      <div class="slides" id="slides" aria-live="polite">
+        <section class="slide is-active" role="group" aria-roledescription="slide" aria-label="Slide 1 of 3">
+          <!-- Typing animation for name -->
+          <h1 class="display">Hi, I'm <span class="accent"><span id="heroTyping" aria-hidden="true"></span></span>.</h1>
+          <p class="lead">Driven by sports, fueled by fitness, inspired by knowledge, and empowered by technology.</p>
+          <!-- removed extra CTAs from home (per your request) -->
+        </section>
+        <section class="slide" role="group" aria-roledescription="slide" aria-label="Slide 2 of 3">
+          <h2 class="display">Focus Today <span class="accent">, Mastery Tomorrow</span></h2>
+          <p class="lead">Rooted in intention, built on discipline, amplified by focus, and rewarded with progress.</p>
+        </section>
+        <section class="slide" role="group" aria-roledescription="slide" aria-label="Slide 3 of 3">
+          <h2 class="display">Let's Build <span class="accent">Together</span></h2>
+          <p class="lead">Open to Explore Opputuinities,and exciting challenges.</p>
+          <a href="#contact" class="btn primary ripple">Contact Me</a>
+        </section>
+      </div>
+
+      <div class="slider-controls" role="tablist" aria-label="Hero slides">
+        <button class="dot is-active" aria-label="Go to slide 1"></button>
+        <button class="dot" aria-label="Go to slide 2"></button>
+        <button class="dot" aria-label="Go to slide 3"></button>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-indicator" aria-label="Scroll to About">↓</a>
+  </main>
+
+
+  <!-- About -->
+<!-- Place your profile photo at images/About Me.jpg and background at images/about-bg.jpg -->
+<section id="about" class="section about-bg">
+  <div class="container grid-2 gap-xl align-center">
+    <div class="stack">
+      <h2 class="section-title">About <span class="accent">Me</span></h2>
+      <p class="muted">I’m Mohit Sahija — a curious learner with a strong foundation in IT, cybersecurity, and a passion for sports. I love building systems that are simple, secure, and scalable.</p>
+      <ul class="feature-list">
+        <li>⚡ Strong fundamentals in IT Infrastructure & Cybersecurity</li>
+        <li>🏆 Sports mindset — discipline, focus, and resilience</li>
+        <li>🧭 Clear goals across education, qualifications, and career</li>
+      </ul>
+      <div class="cta-row">
+        <a href="#contact" class="btn primary ripple">Hire Me</a>
+        <a href="#certifications" class="btn ghost ripple">View Certifications</a>
+      </div>
+    </div>
+
+    <div class="about-card glass">
+      <div class="avatar" style="--avatar:url('images/About Me.jpg')" aria-hidden="true"></div>
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-num" data-count="2">0</span>
+          <span class="stat-label">Years Gym</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="2 Years">0</span>
+          <span class="stat-label">Experience*</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="7">0</span>
+          <span class="stat-label">Active Skills</span>
+        </div>
+      </div>
+      <p class="tiny muted note">*Across enterprises I’ve supported through awareness & simulations.</p>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Education -->
+  <section id="education" class="section alt">
+    <div class="container">
+      <h2 class="section-title">My <span class="accent">Education</span></h2>
+      <ol class="timeline" id="educationTimeline">
+        <li class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <h3>Bachelor of Science in Information Technology - BSCIT</h3>
+            <p class="muted">Gujarat University - CPC Department — 2021–2024</p>
+            <p>Major projects, web Development, leadership roles, IOTs Projects.</p>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <h3>Intermediate / 12th</h3>
+            <p class="muted">A.G Teachers High School — 2020–2021</p>
+            <p>Key subjects, Accounts, Stats, BA.</p>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <h3>Matriculation / 10th</h3>
+            <p class="muted">A.G Teachers High School — 2019–2020</p>
+            <p>Notable achievements, sports captaincy, etc.</p>
+          </div>
+        </li>
+        <!-- Added Master's item -->
+        <li class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <h3>Master of Science in Information Technology - MSCIT — (Ongoing)</h3>
+            <p class="muted">Gujarat University - CPC Department— 2025–Present</p>
+            <p>Pursuing Master's degree while working on cybersecurity and IT Infrastructure projects.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Qualification (Skills) with Image Slider AND flip cards (6) -->
+  <section id="qualification" class="section">
+    <div class="container">
+      <h2 class="section-title">Skills & <span class="accent">Qualifications</span></h2>
+
+      <div class="grid-3 gap-lg cards skill-grid">
+        <div class="skill-card reveal card-flip">
+          <div class="card-inner">
+            <div class="card-front"><h3>Cybersecurity</h3></div>
+            <div class="card-back"><p>DLP, Phishing sim, Awareness training, Firewall hardening, Backups.</p></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal card-flip">
+          <div class="card-inner">
+            <div class="card-front"><h3>IT Infrastructure</h3></div>
+            <div class="card-back"><p>QNAP, NComputing, Structured Cabling, TTBS, On-prem solutions.</p></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal card-flip">
+          <div class="card-inner">
+            <div class="card-front"><h3>Web & Apps</h3></div>
+            <div class="card-back"><p>HTML, CSS, JS, Node, Web dashboards and small IoT apps.</p></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal card-flip">
+          <div class="card-inner">
+            <div class="card-front"><h3>Gym and Nutrition</h3></div>
+            <div class="card-back"><p>Skilled in gym training techniques and personalized nutrition planning for muscle building and fat loss.</p></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal card-flip">
+          <div class="card-inner">
+            <div class="card-front"><h3>Knowledge Enthusiast</h3></div>
+            <div class="card-back"><p>Passionate about exploring life’s deeper truths and applying wisdom to modern living.</p></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal card-flip">
+          <div class="card-inner">
+            <div class="card-front"><h3>Soft Skills</h3></div>
+            <div class="card-back"><p>Leadership, teamwork, discipline, sports-driven resilience.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image slider (qualification gallery) -->
+      <div class="carousel reveal" data-carousel="qualification">
+        <button class="carousel-btn prev" aria-label="Previous slide">‹</button>
+        <div class="carousel-track">
+          <img src="images/Skill cs.png" alt="Cybersecurity Lab" class="carousel-item is-active">
+          <img src="images/Skill IT.jpg" alt="Network Setup" class="carousel-item">
+          <img src="images/Skill gym.jpg" alt="Web Development" class="carousel-item">
+          <img src="images/Skill.jpg" alt="IoT Prototype" class="carousel-item">
+        </div>
+        <button class="carousel-btn next" aria-label="Next slide">›</button>
+        <div class="carousel-dots" aria-label="Qualification gallery dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications with Image Slider (4 items) -->
+  <section id="certifications" class="section alt">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">Certifications</span></h2>
+      <div class="grid-3 gap-lg cards">
+        <article class="card hover-raise reveal">
+          <h3 class="card-title">Certified Information Security and Ethical Hacker /h3>
+          <p class="muted">2023 — Ethical Hacking</p>
+          <p>Phishing simulations & awareness training delivery.</p>
+          <a class="btn tiny ripple" href="#" target="_blank" rel="noopener">See Credential</a>
+        </article>
+
+        <article class="card hover-raise reveal">
+          <h3 class="card-title">Certified Penetration Testing Expert</h3>
+          <p class="muted">2023 — Penetration Tester</p>
+          <p>Backups, DR, endpoint protection & cloud management.</p>
+          <a class="btn tiny ripple" href="#" target="_blank" rel="noopener">See Credential</a>
+        </article>
+
+        <article class="card hover-raise reveal">
+          <h3 class="card-title">Tata - Inspiring and empowering
+future professionals</h3>
+          <p class="muted">July — 2024</p>
+          <p>Cybersecurity Analyst Job Simulation</p>
+          <a class="btn tiny ripple" href="#" target="_blank" rel="noopener">See Credential</a>
+        </article>
+
+        <article class="card hover-raise reveal">
+          <h3 class="card-title">Versa Ace Partner Program</h3>
+          <p class="muted">Aug-2025 — Versa Networks</p>
+          <p>Versa Titan Pre-Sales Partner Training</p>
+          <a class="btn tiny ripple" href="#" target="_blank" rel="noopener">See Credential</a>
+        </article>
+      </div>
+
+      <!-- Image slider (certifications gallery) -->
+      <div class="carousel reveal" data-carousel="certifications">
+        <button class="carousel-btn prev" aria-label="Previous slide">‹</button>
+        <div class="carousel-track">
+          <img src="images/CISEH.jpg" alt="Certified Information Security and Ethical Hacker" class="carousel-item is-active">
+          <img src="images/CPTE.jpg" alt="Certified Penetration Testing Expert" class="carousel-item">
+          <img src="images/TATA.jpg" alt="Other Certificate" class="carousel-item">
+          <img src="images/Versa.jpg" alt="Additional Certificate" class="carousel-item">
+        </div>
+        <button class="carousel-btn next" aria-label="Next slide">›</button>
+        <div class="carousel-dots" aria-label="Certification gallery dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career -->
+  <section id="career" class="section">
+    <div class="container">
+      <h2 class="section-title">My <span class="accent">Career</span> Journey</h2>
+      <ol class="timeline">
+        <li class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <h3>Business Development Executive — Vinay Enterprises (Authorized Partner of Tata Tele Business Services)</h3>
+            <p class="muted">May 2025 — Present</p>
+            <ul class="bullets">
+              <li>Manage mapped accounts and client portfolios provided by Tata Tele Business Services.</li>
+              <li>Conduct meetings with new customers to present telecom & IT solutions (connectivity, cloud, security, and collaboration).</li>
+              <li>Build strong client relationships and deliver end-to-end support for Tata Tele services through Vinay Enterprises.</li>
+              <li>Drive business growth by aligning customer needs with TTBS offerings.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <h3>Digital Marketing Intern — Hem Infotech</h3>
+            <p class="muted">Aug 2024 — December 2024</p>
+            <ul class="bullets">
+              <li>Supported digital campaigns across SEO, social media, and email marketing.</li>
+              <li>Helped design content strategies to improve online visibility.</li>
+              <li>Assisted in analytics reporting to track marketing performance.</li>
+
+            <h3>Back Sales Executive (Cybersecurity) — Hem Infotech</h3>
+            <p class="muted">Jan 2025 — April 2025</p>
+            <ul class="bullets">
+              <li>Engaged with clients to promote cybersecurity solutions including DLP, phishing simulations, and backup services.</li>
+              <li>Coordinated with technical teams and OEMs to align customer needs with solutions.</li>
+              <li>Developed proposals and follow-ups, contributing to new client acquisitions.</li>
+
+
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Big Quote box -->
+  <section id="quote" class="section alt">
+    <div class="container">
+      <div class="quote-box reveal">
+        <blockquote class="big-quote">“Discipline, consistency and curiosity are the three engines that drive mastery.”</blockquote>
+        <p class="muted tiny quote-author">— Mohit Sahija</p>
+      </div>
+    </div>
+  </section>
+
+<!-- Where I Live -->
+<section id="where-i-live" class="map-container">
+  <div class="container">
+    <h2 class="section-title">Where I <span class="accent">Live</span></h2>
+    
+    <!-- Full-width Map -->
+    <div class="map-card reveal">
+      <iframe title="Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1835.7406823273798!2d72.53280063861736!3d23.042807512994663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84ba4155112f%3A0xde94a49a1bf9589!2sCasa%20Vyoma%2C%20Vastrapur%2C%20Ahmedabad%2C%20Gujarat%20380052!5e0!3m2!1sen!2sin!4v1755677931774!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Text Below Map -->
+    <div class="stack text-center" style="margin-top:20px;">
+      <p class="muted">Ahmedabad – My City, My Inspiration</p>
+      <ul class="feature-list" style="display:inline-block; text-align:left;">
+        <li>What I love most here is the vibrant sports culture and the passion for fitness that runs deep in the city.</li>
+        <li>Staying fit is a big part of my life — I have in-depth knowledge of gym workouts, exercises, and diet planning for both muscle building and weight loss.</li>
+        <li>Alongside fitness, I’m also deeply interested in technology and AI, always exploring how innovation can shape our future.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Resume (restored) -->
+  <!-- Put your resume file at /resume.pdf -->
+  <section id="resume" class="section">
+    <div class="container">
+      <h2 class="section-title">Resume</h2>
+      <div class="grid-2 gap-lg align-center">
+        <div>
+          <p class="muted">Download my latest resume (PDF):</p>
+          <a class="btn primary ripple" href="Mohit Sahija.pdf" download id="downloadResume">Download Resume (PDF)</a>
+          <p class="tiny muted note" style="margin-top:12px;">If you prefer to view it online, there is a preview on the right (may not display in all browsers).</p>
+        </div>
+        <div class="card" style="padding:8px;">
+          <!-- Preview: embedded PDF (fallback to download if unsupported) -->
+          <object data="Mohit Sahija.pdf" type="application/pdf" width="100%" height="600">
+  <p class="muted tiny">Preview not supported in this browser. Use the download button to get the PDF.</p>
+</object>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Contact -->
+<section id="contact" class="section contact-bg">
+  <div class="container">
+    <h2 class="section-title">Contact <span class="accent">Me</span></h2>
+
+    <!-- IMPORTANT: put your Formspree endpoint in the "action" -->
+    <form id="contactForm" class="form card reveal" 
+          action="https://formspree.io/f/xyzpqddj" 
+          method="POST" novalidate>
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your Name" required />
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required />
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+      </div>
+
+      <!-- optional subject for your inbox -->
+      <input type="hidden" name="_subject" value="New message from portfolio site" />
+
+      <div class="form-actions">
+        <button type="submit" class="btn primary ripple">Send</button>
+        <p id="formMsg" role="status" class="tiny muted" aria-live="polite"></p>
+      </div>
+    </form>
+
+    <div class="tiny muted note">Fill this Form to Contact me</div>
+  </div>
+</section>
+
+
+  <!-- Footer with socials + centered clock/time -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div style="flex:1; display:flex; align-items:center;">
+        <p class="muted tiny">© <span id="year"></span> Mohit Sahija. All rights reserved.</p>
+      </div>
+
+      <div style="flex:1; display:flex; align-items:center; justify-content:center;">
+        <!-- Centralized socials + clock -->
+        <div class="socials" role="navigation" aria-label="Social links">
+          <a href="https://www.instagram.com/?deoia=1" target="_blank" aria-label="Instagram" class="social" title="Instagram">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zm0 2a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zM18 6.2a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/mohit-sahija-893bba284/" target="_blank" aria-label="LinkedIn" class="social" title="LinkedIn">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M6.94 8.5H3.56V20h3.38zM5.25 3.5A2 2 0 1 0 5.25 7a2 2 0 0 0 0-3.5zM20.44 20h-3.36v-5.6c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95V20H9.72V8.5h3.23v1.57h.05c.45-.86 1.54-1.76 3.18-1.76 3.41 0 4.04 2.24 4.04 5.15V20z"/></svg>
+          </a>
+
+          <!-- Center clock -->
+          <div id="siteClock" class="tiny muted" aria-hidden="false" style="margin-left:12px; font-weight:600;">--:--:--</div>
+        </div>
+      </div>
+
+      <div style="flex:1; display:flex; align-items:center; justify-content:flex-end;">
+        <a href="#top" class="top-link" aria-label="Back to top">↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chat widget (AI-like assistant) -->
+  <div id="chatWidget" aria-hidden="false">
+    <button id="chatOpen" class="chat-open" title="Chat with Mohit">💬</button>
+    <div id="chatWindow" class="chat-window hidden" role="dialog" aria-label="Chat with Mohit">
+      <div class="chat-head">
+        <strong>Ask Mohit</strong>
+        <div>
+          <!-- Train & Import controls to feed the bot (stored in localStorage as "kb") -->
+          <button id="kbExport" class="btn tiny">Export KB</button>
+          <button id="kbImportOpen" class="btn tiny">Import KB</button>
+          <button id="chatClose" aria-label="Close chat" class="btn tiny">✕</button>
+        </div>
+      </div>
+
+      <div id="chatMessages" class="chat-messages" aria-live="polite"></div>
+
+      <div class="chat-input">
+        <input id="chatText" type="text" placeholder="Ask something (resume, skills, contact)..." />
+        <button id="chatSend" class="btn tiny ripple">Send</button>
+      </div>
+
+      <!-- hidden import panel -->
+      <div id="kbImportPanel" class="card" style="display:none; border-radius:0; border-top:1px solid rgba(255,255,255,0.03); padding:10px;">
+        <label class="tiny muted">Paste JSON knowledge (array of {q: 'pattern', a: 'answer'})</label>
+        <textarea id="kbImportJson" rows="4" style="width:100%; margin-top:8px; background:transparent; border:1px dashed rgba(255,255,255,0.04); padding:8px;"></textarea>
+        <div style="display:flex; gap:8px; margin-top:8px;">
+          <button id="kbImportBtn" class="btn tiny">Import</button>
+          <button id="kbClearBtn" class="btn tiny ghost">Clear KB</button>
+          <button id="kbCloseBtn" class="btn tiny ghost">Close</button>
+        </div>
+        <p class="tiny muted" style="margin-top:8px;">Tip: Keep your KB short and structured. Example: [{"q":"resume","a":"Download my resume at /resume.pdf"}]</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
